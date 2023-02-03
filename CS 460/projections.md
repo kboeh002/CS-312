@@ -13,7 +13,7 @@ $\left[\begin{array}{ccc}
 0 & 0 & 0 & 1 \\
 \end{array}\right]$
 
-*prism*
+*[prism](https://drive.google.com/file/d/16lrCCzEHveLhfQZtfzwUkVMs-VHMjlMi/view?usp=sharing)*
 * View volume is rectangular and the front and the back are all the same size
     * it projected onto this thing by the matrix
 
@@ -47,6 +47,5 @@ Has the same five steps
 
 
 
-# Preliminaries for the project
-* windowing systems
+*NOTE: Preliminaries for the project- windowing systems*
 
