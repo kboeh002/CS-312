@@ -1,0 +1,46 @@
+
+* Contention:
+# figure 1
+* Passive media: when nobody is talking on it there is nothing on it
+* CSMA/CD; eithernet is a contention network
+carrier sense moble acces collision detection
+    * accepts occasional collisons and solves them
+# Figure 2
+* eithernet
+    * stations listen before they speak; can't talk at the same time; they test the line
+* volt meter detects the collision and is only active when you send out a message
+* Jam signal is sent to reenforce the collision by sending 32 1's
+* Contention Interval is the length of time it takes for the voltage to get to the end of the wire; hence why eithernet has a limited interval; the longer the wire the longer the contention interval
+
+* better contention level in the middle of the bus
+
+IEEE 802.1
+0.2 (contention free)
+0.3 eithernet
+0.4 token bus (contention free)
+0.5 token ring (contention free)
+(The rest are metropolitan stuff)
+0.6 metro
+0.11
+0.15 (made for hospitals- anyone in range is automatically connected to the network)
+
+Binary exponential backoff algorithm
+
+* token bit determines if it is a free token or a busy token
+* Free token doesnt have a message with it, busy does
+* if A wants to talk it examines the token bit, then if it is free then it will change the token bit in the shift register to free
+* once it is a busy token no one else can touch it, and the message follows behind it
+* once it goes around the ring it spits out a new free token
+* contention environement is a low load environment
+    * eithernet works better
+* token ring is a high load environment is lots of collisions and nothing gets through
+    * eithernet works worse
+    * wire distance and data rates don't apply here
+    * wont break with a high data rate
+    * FDDI is metropolitan area network (intermediate between LAN and WAN)
+    * impurely distributed environment (nothing is in charge) so you have to worry that something will break the token
+        * so, we have at least one station as a "watch dog" so it will open up the gate, get rid of the trash, and spit out a free token
+        * token bus is a software simulation of this
+
+* If A (in figure) crashes then it will never spit out a free token and just continue circling the "trash" around
+https://www.cs.odu.edu/~price/cs471/public_html/spring17/lectures/Scheduling.htm 
