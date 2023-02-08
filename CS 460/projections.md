@@ -41,9 +41,9 @@ Has the same five steps
     * Three ways to minimize communications:
         * Asynchronous communications: don't get anything back
         * Move functionality to the server so they can be accessed via number
-3. Register Evts and CBs
+3. Register Events and Call Backs
 4. Realize graphical objects
-5. Evt loop
+5. Event loop
 
 
 
