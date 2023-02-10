@@ -147,4 +147,4 @@ Now we need to turn the motion notify event off...
 ````
 Environment Mask = Environment Mask & ~PointerMask
 ````
-**||||**
+**||||** *End Proof*
